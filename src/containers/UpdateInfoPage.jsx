@@ -37,8 +37,8 @@ class UpdateInfoPage extends Component {
     const mapDispatchToProps = (dispatch) => {
         return {
                 // handelChange: () => getManager("测试3", "123456")(dispatch)
-                fetchUpdate: (name, email, phone) => {
-                    updateAction(name, email, phone)(dispatch);
+                fetchUpdate: (id, name, email, phone) => {
+                    updateAction(id, name, email, phone)(dispatch);
                     // browserHistory.push(`/manager`)
                     }
             }

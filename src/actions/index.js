@@ -324,12 +324,13 @@ const updateUser = (id, name, email, phone) => {
 // Fetches a page of stargazers for a particular repo.
 // Bails out if page is cached and user didn't specifically request next page.
 // Relies on Redux Thunk middleware.
-export const updateAction = (name, email, phone) =>
+export const updateAction = (id, name, email, phone) =>
     (dispatch, getState) => {
 
         console.log("updateUser...");
         // let loginResultAction = loginManager(name, password);
-        updateUser(name, email, phone).then(function(action) {
+        updateUser(id, name, email, phone).then(function(action) {
+            console.log("phone=" +phone);
             // if (action.token) {
             //     browserHistory.push(`/manager`)
             // } else {

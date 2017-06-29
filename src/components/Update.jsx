@@ -29,6 +29,7 @@ class UpdateInfoForm extends React.Component {
     let name = this.props.form.getFieldValue('nickname' + id);
     let email = this.props.form.getFieldValue('email' + id);
     let phone = this.props.form.getFieldValue('phone' + id);
+    // console.log("phone="+ phone);
     this.props.fetchUpdate(id, name, email, phone);
     // this.props.form.validateFieldsAndScroll((err, values) => {
       // if (!err) {
